@@ -1,0 +1,25 @@
+{
+    "name": "tok-sc-fund",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "hardhat build",
+        "test:coverage": "hardhat test --coverage",
+        "node": "hardhat node",
+        "clean": "hardhat clean",
+        "sepolia:mytoken:uups": "hardhat run --network sepolia mytoken-sepolia-uups.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.0",
+        "hardhat": "^3.0.0"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.4.0",
+        "@openzeppelin/contracts-upgradeable": "^5.4.0",
+        "dotenv": "^16.0.0"
+    }
+}
